@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+h1 {
+    margin: 20px;
+}
+
+.Pokemon_cards_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    grid-auto-rows: auto;
+    justify-items: center;
+    margin-bottom: 20px;
+}
+
+img {
+    width: 150px;
+}
+
+.Pokemon {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+    width: 350px;
+    padding: 10px;
+}
+
+.Pokemon:hover {
+    box-shadow: 10px 10px 10px red;
+    zoom: 120%;
+}
+
+.Olivado {
+    background-color: lightgreen;
+}
+
+.Reptincel {
+    background-color: orange;
+}
+
+.Carapuce {
+    background-color: aquamarine;
+}
+
+.Dardagnan {
+    background-color: greenyellow;
+}
+
+.Nidoran {
+    background-color: purple
+}
+
+.Mélofée {
+    background-color: lightpink;
+}
+
+input {
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+    margin-left: 650px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 200px;
+}
+
+@media (grid) and (max-width: 768px) {
+    .Pokemon_cards_container {
+        grid-template-columns: 1fr;
+    }
+}
